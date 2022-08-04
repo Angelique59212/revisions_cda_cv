@@ -35,13 +35,13 @@ main div {
     color: antiquewhite;
 }
 
-#presentation {
+.presentation {
     border: 3px dashed black;
     margin-top: 4rem;
     padding: 1rem;
 }
 
-#presentation  figcaption {
+.presentation  figcaption {
     font-size: 1.3rem;
 }
 
@@ -108,6 +108,10 @@ figure img {
 /**
     Image center
  */
+
+#mouse {
+    width: 15vw;
+}
 
 .image-center {
     display: flex;
@@ -177,13 +181,8 @@ table {
 }
 
 .category-compet {
-    width: 15vw;
+    width: 100vw;
     text-align: center;
-}
-
-.category-compet > ul > li {
-    list-style-type: none;
-    padding: 0.2rem;
 }
 
 .category-compet dd {
@@ -226,4 +225,48 @@ fieldset input {
 
 fieldset:nth-child(odd) {
     background-color: #678686;
+}
+
+@media screen and (max-width: 1000px) {
+    .category-title {
+        width: 100%;
+        border: 5px dashed black;
+        margin: 0.8rem auto;
+    }
+
+    h1 {
+        padding: 0.2rem;
+    }
+
+    .experience {
+
+    }
+
+    dl div {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    figure img {
+        width: 19vw;
+    }
+
+    .image-logo {
+        display: none;
+    }
+
+    .category-compet dd {
+        width: 63vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .category-title {
+        margin: 0.8rem auto;
+    }
+
+    #computer {
+        width: 100vw;
+    }
 }
