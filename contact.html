@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Contactez-moi !">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <header>
+        <h1 class="identity">ANGELIQUE DEHAINAUT</h1>
+        <h2>Développeur Web/Web Mobile</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Accueil</a>
+            </li>
+        </ul>
+    </nav>
+    <aside>
+        <p>
+            Mon profil vous intéresse, n'hésitez pas à me contacter ou pour toutes informations complémentaires.
+        </p>
+        <p>Je vous recontacte dans les meilleurs délais.</p>
+    </aside>
+    <form method="post" action="mailto:dehainaut.angelique@orange.fr"></form>
+    <fieldset>
+        <legend>Vos informations</legend>
+        <div>
+            <label for="firstname">Prénom</label>
+            <input type="text" id="firstname" name="firstname" autofocus autocomplete="on">
+        </div>
+        <div>
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" autocomplete="on">
+        </div>
+        <div>
+            <label for="email">Votre mail</label>
+            <input type="email" id="email" name="mail" autocomplete="on">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Objet de votre demande</legend>
+        <div>
+            <label for="interested">Mon profil vous intéresse</label>
+            <input type="checkbox" name="interested" id="interested">
+        </div>
+        <div>
+            <label for="more-infos">Plus d'informations</label>
+            <input type="checkbox" name="infos" id="more-infos">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Votre message</legend>
+        <div>
+            <label for="message"></label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre texte ici"></textarea>
+        </div>
+    </fieldset>
+    <footer>
+        <aside>
+            <p><i class="fas fa-envelope"></i><a href="mailto:dehainaut.angelique@orange.fr"> dehainaut.angelique@orange.fr</a></p>
+            <p id="number-phone"><i class="fas fa-mobile"></i> 06.58.03.60.04</p>
+        </aside>
+        <p>Copyright 2022 Angélique Dehainaut - Toute reproduction interdite</p>
+    </footer>
+</div>
+<script src="https://kit.fontawesome.com/6167e09880.js" crossorigin="anonymous"></script>
+</body>
+</html>

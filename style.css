@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri,sans-serif;
+    font-size: 1.2rem;
+    background-color: #4b7070;
+    color: antiquewhite;
+    text-align: center;
+    font-weight: bold;
+}
+
+main div {
+    padding: 1.4rem;
+}
+
+#contact {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #f3af4e;
+    transition: color;
+    transition-duration: 1s;
+}
+
+#contact:hover {
+    color: black;
+}
+
+.identity {
+    padding: 1rem;
+    color: antiquewhite;
+}
+
+#presentation {
+    border: 3px dashed black;
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+#presentation  figcaption {
+    font-size: 1.3rem;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 2rem;
+    color: #f3af4e;
+}
+
+h1 img {
+    margin-top: 1rem;
+}
+
+.category-title {
+    width: 30vw;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.content-category, .category-compet {
+    padding: 1rem;
+}
+
+span {
+    font-style: italic;
+}
+
+/**
+    Contact-me
+ */
+
+aside  a {
+    text-decoration: none;
+    color: #ccc6c6;
+}
+
+aside > div {
+    border-top: 1px solid #b9aeae;
+    padding: 0.2rem;
+}
+
+aside i {
+    padding: 0.4rem;
+}
+
+#number-phone {
+    padding: 0.4rem;
+}
+
+aside > nav > ul > li {
+    list-style-type: none;
+}
+
+/**
+    Image to me
+ */
+
+figure img {
+    width: 10vw;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+/**
+    Image center
+ */
+
+.image-center {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.2rem;
+}
+
+.image-logo {
+    width: 20vw;
+}
+
+.image-logo-center {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.image-center div img {
+    width: 10vw;
+}
+
+.image-center div {
+    margin: 0.8rem;
+}
+
+.image-center div:last-child img{
+    width: 5vw;
+}
+
+#computer {
+    width: 25vw;
+}
+
+.image-center div:first-child {
+    text-align: center;
+}
+
+.content-category > p {
+    padding: 0.4rem;
+    font-size: 1.2rem;
+}
+
+/**
+    Hobbies / Quality
+ */
+
+caption {
+    color: #f3af4e;
+    font-size: 2rem;
+}
+
+#table {
+    margin-top: 3rem;
+}
+
+table {
+    margin: 0 auto;
+}
+
+
+/**
+    Competences
+ */
+
+#container-compet {
+    display: flex;
+}
+
+.category-compet {
+    width: 15vw;
+    text-align: center;
+}
+
+.category-compet > ul > li {
+    list-style-type: none;
+    padding: 0.2rem;
+}
+
+.category-compet dd {
+    padding: 0.4rem;
+}
+
+.category-compet dt {
+    text-decoration: underline;
+    font-style: oblique;
+}
+
+/**
+    Page contact
+ */
+
+nav a {
+    color: #f3af4e;
+    font-size: 1.5rem;
+    transition: color;
+    transition-duration: 1s;
+}
+
+nav a:hover {
+    color: black;
+}
+
+aside p {
+    padding: 1rem;
+}
+
+fieldset {
+    padding: 1.5rem;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+fieldset input {
+    margin: 0.5rem;
+}
+
+fieldset:nth-child(odd) {
+    background-color: #678686;
+}
