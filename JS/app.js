@@ -55,13 +55,28 @@ function foldUp() {
     }
 }
 
-function unFold() {
-    for (let i = 0; i < sectionHidden.length; i++) {
-        animatedSection[i].addEventListener("click", function() {
-            sectionHidden[i].style.display = "block";
-        });
-    }
-}
+// function unFold() {
+//     for (let i = 0; i < sectionHidden.length; i++) {
+//         animatedSection[i].addEventListener("click", function() {
+//             sectionHidden[i].style.display = "block";
+//         });
+//     }
+// }
 
 foldUp();
-unFold();
+// unFold();
+
+// //JSON
+//
+// let jsonSocial = JSON.stringify(jsonDataObjectSocial);
+// document.querySelector("ul").innerHTML = jsonSocial;
+//
+// let jsonDataObjectSocial = ` {
+//     "listReseaux" : {
+//         <a href="https://www.linkedin.com/in/ang%C3%A9lique-dehainaut-89ab49223/" target="_blank">
+//
+//         <i class="fab fa-linkedin"></i> /Angélique Dehainaut</a>-->
+//     }
+// }`;
+
+
