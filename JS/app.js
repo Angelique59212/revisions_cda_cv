@@ -4,11 +4,6 @@ let title = document.querySelectorAll("h1");
 
 function animate() {
     for (let i = 0; i < title.length; i++) {
-        // title[i].style.rotate = "90deg";
-        // title[i].style.rotate = "180deg";
-        // title[i].style.rotate = "260deg";
-        // title[i].style.rotate = "360deg";
-        // title[i].style.transform = "scale(1.5)";
         title[i].style.opacity = "0.5";
     }
 }
@@ -45,26 +40,44 @@ setTimeout(zoomCome,3500);
 // section
 
 let animatedSection = document.querySelectorAll(".fa-arrow-down");
-let sectionHidden = document.querySelectorAll(".section")
+let sectionHidden = document.querySelectorAll(".section");
 
 function foldUp() {
         for (let i = 0; i < sectionHidden.length; i++) {
             animatedSection[i].addEventListener("click", function() {
-            sectionHidden[i].style.display = "none";
+            sectionHidden[i].classList.toggle('hidden');
             });
     }
 }
 
-// function unFold() {
-//     for (let i = 0; i < sectionHidden.length; i++) {
-//         animatedSection[i].addEventListener("click", function() {
-//             sectionHidden[i].style.display = "block";
-//         });
-//     }
-// }
-
 foldUp();
-// unFold();
+
+// animate Letters with mouse over
+
+let span = document.querySelectorAll("label > span");
+
+let color = ['red', 'blue', 'pink', 'yellow', 'green', 'orange', 'grey', 'indianred', 'aqua', 'brown', 'coral' ]
+let fontFamily = ['Arial Black', 'Century', 'Lucida Sans Typewriter'];
+
+function changeColor() {
+    for (let i = 0; i < span.length; i++) {
+        span[i].addEventListener("mouseover", function () {
+            span[i].style.color = color[random(color)];
+            span[i].style.fontFamily = fontFamily[random(fontFamily)];
+            setTimeout(function () {
+                span[i].style.color = "white";
+                span[i].style.fontFamily = "Calibri,sans-serif";
+            },1000);
+        })
+    }
+}
+
+function random(array) {
+    return Math.floor(Math.random() * array.length);
+}
+
+changeColor();
+
 
 // //JSON
 //
@@ -78,5 +91,7 @@ foldUp();
 //         <i class="fab fa-linkedin"></i> /Angélique Dehainaut</a>-->
 //     }
 // }`;
+
+
 
 

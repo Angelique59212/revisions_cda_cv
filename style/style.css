@@ -65,6 +65,10 @@ h1 img {
     padding: 1rem;
 }
 
+.hidden {
+    display: none;
+}
+
 span {
     font-style: italic;
 }
@@ -227,6 +231,8 @@ fieldset:nth-child(odd) {
     background-color: #678686;
 }
 
+
+
 @media screen and (max-width: 1000px) {
     .category-title {
         width: 100%;
@@ -236,10 +242,6 @@ fieldset:nth-child(odd) {
 
     h1 {
         padding: 0.2rem;
-    }
-
-    .experience {
-
     }
 
     dl div {
