@@ -78,6 +78,19 @@ function random(array) {
 
 changeColor();
 
+// figure / figCaption
+
+const card = document.getElementById('card');
+
+card.addEventListener("click",flipCard);
+
+function flipCard() {
+    card.classList.toggle("flipCard");
+}
+
+flipCard();
+
+
 
 // //JSON
 //
@@ -90,8 +103,4 @@ changeColor();
 //
 //         <i class="fab fa-linkedin"></i> /Angélique Dehainaut</a>-->
 //     }
-// }`;
-
-
-
-
+// }`
