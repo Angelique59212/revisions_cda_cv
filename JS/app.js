@@ -119,8 +119,26 @@ xhr.onload = () => {
         linkFace.innerHTML = response.Ul.nameFacebook;
         linkFace.target = response.Ul.targetHref;
 
+        let linkLinkedin = document.createElement("a");
+        linkLinkedin.href = response.Ul.hrefLinkedin;
+        linkLinkedin.innerHTML = response.Ul.nameLinkedin;
+        linkLinkedin.target = response.Ul.targetHref;
+
+        let linkGit = document.createElement("a");
+        linkGit.href = response.Ul.hrefGitHub;
+        linkGit.innerHTML = response.Ul.nameGitHub;
+        linkGit.target = response.Ul.targetHref;
+
         liFace.append(linkFace);
         ul.append(liFace);
+        nav.append(ul);
+
+        liLink.append(linkLinkedin);
+        ul.append(liLink);
+        nav.append(ul);
+
+        liGit.append(linkGit);
+        ul.append(liGit);
         nav.append(ul);
 
     }
@@ -143,17 +161,28 @@ let divSQL = document.getElementById("SQL");
 
 xhrDd.onload = () => {
     if (xhrDd.status === 200) {
-        let response = xhr.response;
+        let response = xhrDd.response;
 
         let ddHTML = document.createElement("dd");
-        let ddCSS = document.createElement("dd");
-        let ddJS = document.createElement("dd");
-        let ddPHP = document.createElement("dd");
-        let ddSQL = document.createElement("dd");
-
         ddHTML.innerHTML = response.Dd.nameHTML;
 
+        let ddCSS = document.createElement("dd");
+        ddCSS.innerHTML = response.Dd.nameCSS;
+
+        let ddJS = document.createElement("dd");
+        ddJS.innerHTML = response.Dd.nameJS;
+
+        let ddPHP = document.createElement("dd");
+        ddPHP.innerHTML = response.Dd.namePHP;
+
+        let ddSQL = document.createElement("dd");
+        ddSQL.innerHTML = response.Dd.nameSQL;
+
         divHTML.append(ddHTML);
+        divCSS.append(ddCSS);
+        divJS.append(ddJS);
+        divPHP.append(ddPHP);
+        divSQL.append(ddSQL);
     }
 }
 

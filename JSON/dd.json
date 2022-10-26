@@ -1,0 +1,9 @@
+{
+  "Dd" : {
+    "nameHTML" : "langage Informatique pour créer des pages Web",
+    "nameCSS" : "Langage Informatique pour mettre en place des pages Web",
+    "nameJS" : "Langage de programmation qui permet de créer du contenu mis à jour de façon dynamique",
+    "namePHP" : "Langage de script pour la conception de sites web dynamiques, s'utilise côté serveur",
+    "nameSQL" : "<dd>Langage informatique utilisé pour exploiter des bases de données"
+  }
+}
