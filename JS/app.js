@@ -90,17 +90,73 @@ function flipCard() {
 
 flipCard();
 
+// JSON  ul
+
+const requestUrl = "/JSON/ul.json";
+let xhr = new XMLHttpRequest();
+xhr.open("GET",requestUrl);
+xhr.responseType = "json";
+
+let nav = document.querySelector("nav");
+
+function createLi(id) {
+    let li = document.createElement("li");
+    li.id = id;
+    return li ;
+}
+    //Gérer la réponse
+xhr.onload = () => {
+    if (xhr.status === 200) {
+        let response = xhr.response;
+        let ul = document.createElement("ul");
+
+        let liFace = createLi("Facebook");
+        let liLink = createLi("Linkedin");
+        let liGit = createLi("GitHub");
+
+        let linkFace = document.createElement("a");
+        linkFace.href = response.Ul.hrefFacebook;
+        linkFace.innerHTML = response.Ul.nameFacebook;
+        linkFace.target = response.Ul.targetHref;
+
+        liFace.append(linkFace);
+        ul.append(liFace);
+        nav.append(ul);
+
+    }
+}
+xhr.send();
 
 
-// //JSON
-//
-// let jsonSocial = JSON.stringify(jsonDataObjectSocial);
-// document.querySelector("ul").innerHTML = jsonSocial;
-//
-// let jsonDataObjectSocial = ` {
-//     "listReseaux" : {
-//         <a href="https://www.linkedin.com/in/ang%C3%A9lique-dehainaut-89ab49223/" target="_blank">
-//
-//         <i class="fab fa-linkedin"></i> /Angélique Dehainaut</a>-->
-//     }
-// }`
+// JSON DD
+
+const requestUrlDd = "/JSON/dd.json";
+let xhrDd = new XMLHttpRequest();
+xhrDd.open("GET",requestUrlDd);
+xhrDd.responseType = "json";
+
+let divHTML = document.getElementById("HTML");
+let divCSS = document.getElementById("CSS");
+let divJS = document.getElementById("JS");
+let divPHP = document.getElementById("PHP");
+let divSQL = document.getElementById("SQL");
+
+xhrDd.onload = () => {
+    if (xhrDd.status === 200) {
+        let response = xhr.response;
+
+        let ddHTML = document.createElement("dd");
+        let ddCSS = document.createElement("dd");
+        let ddJS = document.createElement("dd");
+        let ddPHP = document.createElement("dd");
+        let ddSQL = document.createElement("dd");
+
+        ddHTML.innerHTML = response.Dd.nameHTML;
+
+        divHTML.append(ddHTML);
+    }
+}
+
+xhrDd.send();
+
+
